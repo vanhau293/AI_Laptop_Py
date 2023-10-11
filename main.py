@@ -47,4 +47,4 @@ def process_demand(demand: Demand):
     temp = predict_demand(info)
     return str(temp)
 if __name__ == '__main__':
-    uvicorn.run("main:app", port=5000, host='ailaptoppy-production.up.railway.app' reload=True, access_log=False)
+    uvicorn.run("main:app", port=5000, host='ailaptoppy-production.up.railway.app', reload=True, access_log=False)
