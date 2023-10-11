@@ -46,4 +46,5 @@ def process_demand(demand: Demand):
     print(info)
     temp = predict_demand(info)
     return str(temp)
-
+if __name__ == '__main__':
+    uvicorn.run("main:app", port=5000, reload=True, access_log=False)
